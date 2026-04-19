@@ -108,7 +108,7 @@ body {
 
 /* ---------- Density ---------- */
 :root[data-density="spacious"] {
-  --section-py: clamp(64px, 6vw, 96px);
+  --section-py: clamp(48px, 4.5vw, 72px);
   --stack-lg: 48px;
   --stack-md: 28px;
   --stack-sm: 16px;
