@@ -1,0 +1,259 @@
+// Bottom sections: Work, Process, About, Testimonials, Contact
+
+const workItems = [
+  {
+    title: 'NJ Stars Elite',
+    tag: 'Full-stack rebuild',
+    year: '2026',
+    url: 'https://njstarselite.com',
+    body: 'A complete redesign and platform rebuild for a New Jersey AAU basketball club: marketing site, event calendar, tryout & season registrations, custom merch shop, and an admin dashboard to run it all.',
+    points: [
+      { k: 'Perf', v: '99 / 100' },
+      { k: 'Role', v: 'Design + Build' },
+      { k: 'Stack', v: 'Next · Stripe' },
+    ],
+    image: 'assets/njstars-after.png',
+  },
+  {
+    title: 'LEAG',
+    tag: 'Landing page',
+    year: '2025',
+    url: 'https://theleag.app',
+    body: 'Marketing landing page for a new product. Clear positioning, careful type, and a performance budget that leaves no room for slow first paints.',
+    points: [
+      { k: 'Scope', v: 'Single page' },
+      { k: 'Role', v: 'Design + Build' },
+      { k: 'Stack', v: 'Static · CDN' },
+    ],
+    image: 'assets/leag.png',
+  },
+];
+
+const LeagPreview = () => (
+  <div className="mock mock--leag">
+    <div className="mock__chrome">
+      <i/><i/><i/>
+      <div className="bar" />
+    </div>
+    <div className="mock__body">
+      <div className="leag__wordmark">leag</div>
+      <div className="leag__tag">Landing page · 2025</div>
+    </div>
+  </div>
+);
+
+const Work = () => (
+  <section id="work">
+    <div className="container">
+      <div className="services__head">
+        <div className="reveal">
+          <div className="eyebrow">Selected work</div>
+          <h2 className="display display--lg">A few projects I'm <em>proud</em> of.</h2>
+        </div>
+        <p className="lede reveal" data-delay="1">
+          A small, honest list. I'd rather show you two I know well than ten I don't.
+          More case studies on the way.
+        </p>
+      </div>
+
+      <div className="work__list">
+        {workItems.map((w, i) => (
+          <a
+            key={w.title}
+            href={w.url}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="work__item reveal"
+            data-delay={Math.min(i, 3)}
+          >
+            <div>
+              <div className="work__meta">
+                <span className="work__tag">{w.tag}</span>
+                <span className="work__year">{w.year}</span>
+              </div>
+              <h3 className="work__title">
+                {w.title}
+                <span className="go"><ArrowUpRight size={28} /></span>
+              </h3>
+              <p className="work__body">{w.body}</p>
+              <div className="work__points">
+                {w.points.map(p => (
+                  <span key={p.k}>{p.k}<strong>{p.v}</strong></span>
+                ))}
+              </div>
+            </div>
+            <div className="work__preview">
+              {w.image
+                ? <div className="work__shot"><img src={w.image} alt={`${w.title} screenshot`} /></div>
+                : <LeagPreview />
+              }
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+);
+
+// ---------- Process ----------
+const steps = [
+  { n: '01', t: 'Listen', b: 'We start with a call about your business, your customers, what you\'ve tried, what\'s getting in the way.', w: 'Week 0 · 30 to 60 min' },
+  { n: '02', t: 'Plan', b: 'A short written proposal: scope, timeline, a fixed price, and exactly what you\'ll receive.', w: 'Week 1' },
+  { n: '03', t: 'Design', b: 'Wireframes first, then a high-fidelity prototype in the browser. No guessing. You see it before we build.', w: 'Weeks 2 to 3' },
+  { n: '04', t: 'Ship', b: 'Build, test, launch. Then a month of support while you settle in, with training on anything you\'ll manage.', w: 'Weeks 4 to 6' },
+];
+
+const Process = () => (
+  <section id="process" className="process">
+    <div className="container">
+      <div className="services__head">
+        <div className="reveal">
+          <div className="eyebrow">How I work</div>
+          <h2 className="display display--lg">Calm, clear, and no <em>surprise</em> invoices.</h2>
+        </div>
+        <p className="lede reveal" data-delay="1">
+          Every project follows the same four phases. You'll always know what's next, what's done, and what it costs.
+        </p>
+      </div>
+      <div className="process__grid">
+        {steps.map((s, i) => (
+          <div className="step reveal" data-delay={Math.min(i, 3)} key={s.n}>
+            <div className="step__num">{s.n}</div>
+            <h4 className="step__title">{s.t}</h4>
+            <p className="step__body">{s.b}</p>
+            <div className="step__when">{s.w}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+);
+
+// ---------- About ----------
+const About = () => (
+  <section id="about">
+    <div className="container">
+      <div className="eyebrow reveal">About</div>
+      <div className="about__grid" style={{ marginTop: 24 }}>
+        <div className="about__portrait reveal" aria-hidden="true" />
+        <div className="about__text">
+          <p className="reveal">
+            I'm Abe Peña, a designer who ships code, or a developer who actually cares how things look. Either framing works.
+          </p>
+          <p className="reveal" data-delay="1">
+            I'm based in Florida and work with small businesses, founders, and the occasional team that just needs another steady pair of hands. I've been freelancing seriously for a few years now, after friends kept asking me to build things and I realized I liked the work more than most of what I was doing full time.
+          </p>
+          <p className="reveal" data-delay="2">
+            Most of my 8+ years has been spent building internal tools at my full-time job, work I'm proud of but can't share publicly. The projects you see here are the handful of client builds I've done alongside that, and I'm ramping up to take on more.
+          </p>
+          <p className="reveal" data-delay="3">
+            I care about typography, page speed, semantic HTML, and writing code I'd be glad to hand off. Mostly I care about quiet, reliable work that makes my clients look good to theirs.
+          </p>
+          <div className="about__stack reveal" data-delay="4">
+            <div>
+              <h4>Design</h4>
+              <ul>
+                <li>Design systems</li><li>Prototyping</li><li>Copywriting</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Engineering</h4>
+              <ul>
+                <li>Next.js · React</li><li>TypeScript</li><li>Python · Django</li><li>Node · Postgres</li><li>Stripe</li><li>Vercel · AWS</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+);
+
+// ---------- Testimonials (placeholder) ----------
+const Testimonials = () => (
+  <section>
+    <div className="container">
+      <div className="services__head">
+        <div className="reveal">
+          <div className="eyebrow">Kind words</div>
+          <h2 className="display display--lg">What clients <em>say</em>.</h2>
+        </div>
+        <p className="lede reveal" data-delay="1">
+          I'm collecting quotes from recent projects. Real ones go here as they come in. The placeholders are in a lighter tone so you can spot them.
+        </p>
+      </div>
+      <div className="quotes">
+        <figure className="quote quote--placeholder reveal">
+          <div className="quote__mark">“</div>
+          <blockquote className="quote__text">Client quote coming soon, a sentence or two about outcomes, working style, and the handoff.</blockquote>
+          <figcaption className="quote__who">
+            <strong>Client name</strong>
+            Role · Company
+          </figcaption>
+        </figure>
+        <figure className="quote quote--placeholder reveal" data-delay="1">
+          <div className="quote__mark">“</div>
+          <blockquote className="quote__text">Client quote coming soon, likely about speed of delivery, responsiveness, or a specific business win.</blockquote>
+          <figcaption className="quote__who">
+            <strong>Client name</strong>
+            Role · Company
+          </figcaption>
+        </figure>
+        <figure className="quote quote--placeholder reveal" data-delay="2">
+          <div className="quote__mark">“</div>
+          <blockquote className="quote__text">Client quote coming soon, about long-term partnership, trust, and the quality of the finished work.</blockquote>
+          <figcaption className="quote__who">
+            <strong>Client name</strong>
+            Role · Company
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+);
+
+// ---------- Contact ----------
+const Contact = () => (
+  <section id="contact" className="contact">
+    <div className="container">
+      <div className="eyebrow reveal">Get in touch</div>
+      <h2 className="contact__title reveal" data-delay="1">
+        Let's build something <em>worth visiting.</em>
+      </h2>
+
+      <div className="contact__grid">
+        <div className="contact__col reveal">
+          <h5>Email</h5>
+          <a href="mailto:pena.abe@gmail.com">
+            pena.abe@gmail.com
+            <ArrowUpRight size={20} />
+          </a>
+          <span className="sub">Best for project inquiries</span>
+        </div>
+        <div className="contact__col reveal" data-delay="1">
+          <h5>Phone</h5>
+          <a href="tel:+19498366285">
+            (949) 836-6285
+          </a>
+          <span className="sub">Text or call · ET</span>
+        </div>
+        <div className="contact__col reveal" data-delay="2">
+          <h5>Elsewhere</h5>
+          <a href="https://github.com/abepena" target="_blank" rel="noreferrer noopener" style={{ display: 'flex', marginBottom: 12 }}>
+            GitHub <ArrowUpRight size={18} />
+          </a>
+          <a href="https://www.linkedin.com/in/abraham-pena-8027a05b/" target="_blank" rel="noreferrer noopener" style={{ display: 'flex' }}>
+            LinkedIn <ArrowUpRight size={18} />
+          </a>
+        </div>
+      </div>
+
+      <div className="contact__foot">
+        <span>© {new Date().getFullYear()} Abe Peña</span>
+        <span>Designed in Florida</span>
+      </div>
+    </div>
+  </section>
+);
+
+Object.assign(window, { Work, Process, About, Testimonials, Contact });
