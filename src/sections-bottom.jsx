@@ -180,28 +180,28 @@ const Testimonials = () => (
           <h2 className="display display--lg">From the people I <em>build with</em>.</h2>
         </div>
         <p className="lede reveal" data-delay="1">
-          Most of my day-to-day work is at a company I can't name publicly, so these come from the project leads I work with there. Names withheld until I've cleared it with them.
+          Two quotes from the NJ Stars Elite team. More to come as projects wrap up and I've cleared permission to share.
         </p>
       </div>
       <div className="quotes">
-        <figure className="quote quote--placeholder reveal">
+        <figure className="quote reveal">
           <div className="quote__mark">“</div>
           <blockquote className="quote__text">
-            Abe is the person I hand a half-formed idea to and get back something better than I'd pictured. He sweats the details I'd never think to ask about, and the thing just works when it lands.
+            Abe took everything we were juggling — Instagram DMs, Google Sheets, emails, CashApp — and put it all in one place. The brand looks sharp, the kids think the site is cool, and parents can finally sign up and support the program without me chasing them down. He rebuilt NJ Stars from the ground up: site, uniforms, logos, merch. Night and day.
           </blockquote>
           <figcaption className="quote__who">
-            <strong>Project Lead</strong>
-            Undisclosed · 8 years working together
+            <strong>Kenneth</strong>
+            Founder · NJ Stars Elite
           </figcaption>
         </figure>
-        <figure className="quote quote--placeholder reveal" data-delay="1">
+        <figure className="quote reveal" data-delay="1">
           <div className="quote__mark">“</div>
           <blockquote className="quote__text">
-            Calm, careful, and shockingly fast when it matters. Abe takes ownership end-to-end, writes code the rest of us can actually read, and makes our team look good to the business.
+            I used to spend my nights answering Instagram DMs trying to track who was in and who wasn't. Now I just point kids to the site. They register themselves, pay, show up. Huge difference for the way we run tryouts and events.
           </blockquote>
           <figcaption className="quote__who">
-            <strong>Engineering Lead</strong>
-            Undisclosed · internal tooling team
+            <strong>Coach Tray</strong>
+            NJ Stars Elite
           </figcaption>
         </figure>
       </div>
