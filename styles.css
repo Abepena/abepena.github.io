@@ -169,9 +169,9 @@ section { padding: var(--section-py) 0; }
   color: var(--fg);
   text-wrap: balance;
 }
-.display--xl { font-size: clamp(44px, 8.4vw, 124px); }
-.display--lg { font-size: clamp(36px, 5.4vw, 72px); }
-.display--md { font-size: clamp(28px, 3.6vw, 48px); }
+.display--xl { font-size: clamp(52px, 9vw, 124px); }
+.display--lg { font-size: clamp(40px, 6vw, 72px); }
+.display--md { font-size: clamp(30px, 4vw, 48px); }
 
 .display em {
   font-style: italic;
@@ -348,6 +348,8 @@ section { padding: var(--section-py) 0; }
   .nav__mobile { display: flex; }
   .hero__kicker { font-size: 10px; gap: 8px; letter-spacing: 0.08em; }
   .hero__kicker .avail { padding: 4px 9px 4px 7px; }
+  .btn { font-size: 13px; padding: 11px 18px; }
+  .btn .arrow svg { width: 14px; height: 14px; }
 }
 
 /* ==========================================================
