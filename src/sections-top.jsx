@@ -23,7 +23,8 @@ const Nav = () => {
 };
 
 const Hero = ({ variant }) => {
-  const year = 2026;
+  const now = new Date();
+  const availability = now.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
   const isCentered = variant === 'centered';
   return (
     <section id="top" className={`hero ${isCentered ? 'hero--centered' : 'hero--split'}`}>
@@ -55,7 +56,7 @@ const Hero = ({ variant }) => {
             <aside className="hero__aside reveal" data-delay="2">
               <p>I'm Abe, a designer-developer who builds quietly capable websites and web apps for small businesses and founders.</p>
               <p>Fast, accessible, easy to find on Google, and pleasant to use. No templates, no bloat.</p>
-              <div className="meta">Currently open · Apr {year}</div>
+              <div className="meta">Currently open · {availability}</div>
             </aside>
           )}
         </div>
