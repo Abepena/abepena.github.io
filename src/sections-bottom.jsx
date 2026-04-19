@@ -180,14 +180,14 @@ const Testimonials = () => (
           <h2 className="display display--lg">From the people I <em>build with</em>.</h2>
         </div>
         <p className="lede reveal" data-delay="1">
-          Two quotes from the NJ Stars Elite team. More to come as projects wrap up and I've cleared permission to share.
+          Two from the NJ Stars Elite team, and one from a project lead at the company where most of my day-to-day work lives. Names withheld until I've cleared permission to share.
         </p>
       </div>
       <div className="quotes">
         <figure className="quote reveal">
           <div className="quote__mark">“</div>
           <blockquote className="quote__text">
-            Abe took everything we were juggling — Instagram DMs, Google Sheets, emails, CashApp — and put it all in one place. The brand looks sharp, the kids think the site is cool, and parents can finally sign up and support the program without me chasing them down. He rebuilt NJ Stars from the ground up: site, uniforms, logos, merch. Night and day.
+            Abe took everything we were juggling across Instagram DMs, Google Sheets, emails, and CashApp, and put it all in one home. The brand looks sharp, the kids think the site is cool, and parents can finally sign up and support the program without me chasing them down. He rebuilt NJ Stars from the ground up: site, uniforms, logos, merch. Night and day.
           </blockquote>
           <figcaption className="quote__who">
             <strong>Kenneth</strong>
@@ -202,6 +202,16 @@ const Testimonials = () => (
           <figcaption className="quote__who">
             <strong>Coach Tray</strong>
             NJ Stars Elite
+          </figcaption>
+        </figure>
+        <figure className="quote reveal" data-delay="2">
+          <div className="quote__mark">“</div>
+          <blockquote className="quote__text">
+            Abe has quietly saved our team hundreds of hours. He takes on the fragmented, tedious processes nobody wants to own, and turns them into tools that just run. Admin work moves faster, engineering handoffs are cleaner, and we've cut real cost along the way.
+          </blockquote>
+          <figcaption className="quote__who">
+            <strong>Project Lead</strong>
+            Undisclosed · internal tooling
           </figcaption>
         </figure>
       </div>
