@@ -231,7 +231,11 @@ const Contact = () => (
       <div className="contact__grid">
         <div className="contact__col reveal">
           <h5>Email</h5>
-          <a href="mailto:pena.abe@gmail.com">
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=pena.abe@gmail.com&su=Project+inquiry+for+Abe+Pe%C3%B1a"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
             pena.abe@gmail.com
             <ArrowUpRight size={20} />
           </a>
