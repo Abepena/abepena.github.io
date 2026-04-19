@@ -169,7 +169,7 @@ section { padding: var(--section-py) 0; }
   color: var(--fg);
   text-wrap: balance;
 }
-.display--xl { font-size: clamp(52px, 9vw, 124px); }
+.display--xl { font-size: clamp(64px, 11vw, 156px); }
 .display--lg { font-size: clamp(40px, 6vw, 72px); }
 .display--md { font-size: clamp(30px, 4vw, 48px); }
 

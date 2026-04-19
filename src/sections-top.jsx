@@ -85,7 +85,7 @@ const Hero = ({ variant }) => {
         <div className="hero__grid">
           <div>
             <h1 className="display display--xl reveal" data-delay="1">
-              Websites that <em>work</em>, from a single landing page to the full stack behind it.
+              Websites that <em>work</em>, landing page to full stack.
             </h1>
             {isCentered && (
               <p className="lede reveal" data-delay="2" style={{ marginTop: 24 }}>
