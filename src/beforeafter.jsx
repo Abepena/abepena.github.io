@@ -7,7 +7,7 @@ const MockBefore = () => (
       <div className="bar" />
     </div>
     <div className="mock__body mock__body--shot">
-      <img src="assets/njstars-before.png" alt="NJ Stars Elite before redesign" />
+      <img src="assets/njstars-before.webp" alt="NJ Stars Elite before redesign" width="1600" height="1000" loading="lazy" decoding="async" />
     </div>
   </div>
 );
@@ -19,7 +19,7 @@ const MockAfter = () => (
       <div className="bar" />
     </div>
     <div className="mock__body mock__body--shot">
-      <img src="assets/njstars-after.png" alt="NJ Stars Elite after redesign" />
+      <img src="assets/njstars-after.webp" alt="NJ Stars Elite after redesign" width="1600" height="1000" loading="lazy" decoding="async" />
     </div>
   </div>
 );

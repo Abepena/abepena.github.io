@@ -12,7 +12,7 @@ const workItems = [
       { k: 'Role', v: 'Design + Build' },
       { k: 'Stack', v: 'Next · Stripe' },
     ],
-    image: 'assets/njstars-after.png',
+    image: 'assets/njstars-after.webp',
   },
   {
     title: 'LEAG',
@@ -25,7 +25,7 @@ const workItems = [
       { k: 'Role', v: 'Design + Build' },
       { k: 'Stack', v: 'Static · CDN' },
     ],
-    image: 'assets/leag.png',
+    image: 'assets/leag.webp',
   },
 ];
 
@@ -83,7 +83,7 @@ const Work = () => (
             </div>
             <div className="work__preview">
               {w.image
-                ? <div className="work__shot"><img src={w.image} alt={`${w.title} screenshot`} /></div>
+                ? <div className="work__shot"><img src={w.image} alt={`${w.title} screenshot`} width="1600" height="1000" loading="lazy" decoding="async" /></div>
                 : <LeagPreview />
               }
             </div>
