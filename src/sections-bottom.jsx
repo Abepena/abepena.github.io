@@ -26,6 +26,8 @@ const workItems = [
       { k: 'Stack', v: 'Static · CDN' },
     ],
     image: 'assets/leag.webp',
+    portrait: true,
+    imageSize: { w: 1080, h: 1912 },
   },
 ];
 
@@ -81,9 +83,9 @@ const Work = () => (
                 ))}
               </div>
             </div>
-            <div className="work__preview">
+            <div className={w.portrait ? 'work__preview work__preview--phone' : 'work__preview'}>
               {w.image
-                ? <div className="work__shot"><img src={w.image} alt={`${w.title} screenshot`} width="1600" height="1000" loading="lazy" decoding="async" /></div>
+                ? <div className="work__shot"><img src={w.image} alt={`${w.title} screenshot`} width={(w.imageSize || { w: 1600 }).w} height={(w.imageSize || { h: 1000 }).h} loading="lazy" decoding="async" /></div>
                 : <LeagPreview />
               }
             </div>

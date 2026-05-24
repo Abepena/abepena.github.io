@@ -1071,6 +1071,16 @@ section { padding: var(--section-py) 0; }
   position: relative;
 }
 .work__item:hover .work__preview { transform: translateY(-4px); }
+
+/* Portrait phone-style preview (e.g. mobile landing page screenshots) */
+.work__preview--phone {
+  aspect-ratio: 1080 / 1912;
+  width: min(300px, 100%);
+  justify-self: center;
+  border-radius: 14px;
+}
+.work__preview--phone .work__shot img { object-fit: cover; }
+
 .work__shot {
   position: absolute;
   inset: 0;
