@@ -27,7 +27,7 @@ const workItems = [
     ],
     image: 'assets/leag.webp',
     portrait: true,
-    imageSize: { w: 1080, h: 1912 },
+    imageSize: { w: 1320, h: 2602 },
   },
 ];
 
